@@ -98,12 +98,26 @@ body {
   color: #86b7fe;
 }
 
-/* Testimonials */
-.caroussel {
+/* Announcement */
+.announcement{
+  background: url(img/bg-1.jpeg) no-repeat center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  max-width: 500px;
   height: auto;
 }
+
+.announcement-wrapper{
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  padding: 20px;
+  margin: 30px;
+  width: 80%;
+}
+
 /* Navbar */
 li {
   list-style: none;
@@ -297,8 +311,7 @@ header {
 }
 
 .about .about-content {
-  width: 100%;
-  columns: 2;
+  width: 45%;
 }
 
 .about .about-content h2 {
@@ -306,7 +319,7 @@ header {
   font-size: 2.5rem;
   font-weight: 600;
   color: #ffffff;
-  text-shadow: 2px 2px 10px rgb(122, 168, 243);
+  text-shadow: 2px 2px 10px #59baba;;
   margin-bottom: var(--mb);
   text-align: center;
 }
@@ -339,7 +352,7 @@ header {
   font-family: "Oswald", sans-serif;
   color: #fff;
   margin-bottom: var(--mb);
-  text-shadow: 2px 2px 10px rgb(122, 168, 243);
+  text-shadow: 2px 2px 10px #59baba;;
   font-size: 2.5rem;
   font-weight: 600;
   margin: 0;
@@ -406,18 +419,18 @@ header {
 
 .footer-1 {
   width: 40%;
-  text-shadow: 1px 1px 14px #315da0;
 }
 
 .footer-2,
 .footer-3,
 .footer-4 {
   width: 20%;
-  text-shadow: 1px 1px 14px #315da0;
 }
 
 h5{
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-shadow: 1px 1px 5px #59baba;
 }
 
 p.footer-text {

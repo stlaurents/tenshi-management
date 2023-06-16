@@ -72,8 +72,8 @@ ol, ul{
 /* Accordion */
 .accordion {
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   padding: 20px;
   color: white;
   cursor: pointer;
@@ -87,6 +87,22 @@ ol, ul{
   margin: auto;
 }
 
+/* .accordion.active{
+  background-image: url('img/bg-1.jpeg');
+  background-size: cover;
+  filter: blur(8px);
+}
+
+.accordion.active .blur-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  z-index: 1;
+} */
+
 .active, .accordion:hover {
   background-color: #ccc;
   color: #4d4a4a;
@@ -94,9 +110,8 @@ ol, ul{
 
 .panel {
   padding: 0 18px;
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   color: white;
   max-height: 0;
   overflow: hidden;
@@ -122,6 +137,7 @@ ol, ul{
   padding: 20px;
   margin: 30px;
   width: 80%;
+  border-radius: 20px;
 }
 
 .anc-text{
@@ -273,9 +289,15 @@ header {
   max-width: 60rem;
 }
 
+.hero .content h2{
+  font-family: Alex Brush, "cursive";
+  font-size: 2.5rem;
+}
+
 .hero .content h1 {
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Cinzel', serif;
+  text-shadow: 2px 2px 10px #59baba;;
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: var(--mb);
@@ -444,7 +466,7 @@ dt{
 }
 
 h5{
-  font-family: "Oswald", sans-serif;
+  font-family: 'Cinzel', serif;
   font-weight: 400;
   text-shadow: 1px 1px 5px #59baba;
 }
@@ -551,6 +573,10 @@ i {
 
   .hero .content {
     width: 100%;
+  }
+
+  .hero .content h1{
+    font-size: 28px;
   }
 
   .about-wrapper {

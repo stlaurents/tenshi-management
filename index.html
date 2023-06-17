@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="script.js" />
     <link rel="stylesheet" href="style.css" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@500;600;700;800&family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Castoro:ital@0;1&family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
     <!-- Font Awesome Icon -->
     <script src="https://kit.fontawesome.com/66d1df4e05.js" crossorigin="anonymous"></script>
   </head>
@@ -18,7 +18,7 @@
     <!-- Landing Page -->
     <header>
       <nav class="navbar shadow-lg">
-        <div class="logo" id="#hero"><a href="#hero">天使 Management</a></div>
+        <div class="logo" id="hero"><a href="#hero">天使 Management</a></div>
         <ul class="links">
           <li><a href="#hero" class="active>Home</a></li>
           <li><a href="#about">About</a></li>
@@ -39,15 +39,16 @@
       </div>
     </header>
 
+    <!-- Hero -->
     <section class="hero" id="hero">
       <div class="content">
-        <h2>We extend to you</h2>
-        <h1>天使 Management</h1>
+        <h1 class="single-line">A Matter of Time, A Labour of Love</h1>
         <p>Indulge in the symphony of love and passion woven into our unforgettable service.</p>
-        <a href="https://www.notion.so/stlaurent/Management-92c7c3abd95849c6b7efd0be03142b37" class="btn btn-light text-uppercase mt-2 me-3">Availability</a>
-        <a href="https://twitter.com/Revassaer" class="text-uppercase btn btn-outline-light mt-2">Book a Session</a>
+        <a href="https://www.notion.so/stlaurent/Management-92c7c3abd95849c6b7efd0be03142b37" class="btn btn-light text-uppercase mt-2 me-3 avl-btn">Availability</a>
+        <a href="https://twitter.com/Revassaer" class="text-uppercase btn btn-outline-light mt-2 hero-btn">Book a Session</a>
       </div>
     </section>
+    <!-- End of Hero -->
 
     <!-- About Section start -->
     <section id="about" class="about">
@@ -102,6 +103,7 @@
         </p>
       </div>
     </section>
+    <!-- End of Announcement -->
 
     <!-- Projects -->
     <!-- <section class="projects"></section> -->
@@ -241,5 +243,115 @@
         });
       }
     </script>
+
+    <!-- Hero -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var heroSection = document.querySelector('.hero');
+      var heroSectionOffset = heroSection.offsetTop;
+      var heroSectionHeight = heroSection.offsetHeight;
+
+      function checkScroll() {
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition >= heroSectionOffset - window.innerHeight + heroSectionHeight / 2) {
+          heroSection.querySelector('.content').classList.add('fade-up');
+        } else {
+          heroSection.querySelector('.content').classList.remove('fade-up');
+        }
+      }
+
+      window.addEventListener('scroll', checkScroll);
+      checkScroll();
+    });
+    </script>
+
+    <!-- About -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var aboutSection = document.querySelector('.about');
+      var aboutSectionOffset = aboutSection.offsetTop;
+      var aboutSectionHeight = aboutSection.offsetHeight;
+
+      function checkScroll() {
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition >= aboutSectionOffset - window.innerHeight + aboutSectionHeight / 2) {
+          aboutSection.classList.add('fade-in');
+        }
+      }
+
+      window.addEventListener('scroll', checkScroll);
+      checkScroll();
+    });
+    </script>
+
+    <!-- Anc -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var announcementSection = document.querySelector('.announcement');
+      var announcementSectionOffset = announcementSection.offsetTop;
+      var announcementSectionHeight = announcementSection.offsetHeight;
+
+      function checkScroll() {
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition >= announcementSectionOffset - window.innerHeight + announcementSectionHeight / 2) {
+          announcementSection.querySelector('.announcement-wrapper').classList.add('blur-in');
+        } else {
+          announcementSection.querySelector('.announcement-wrapper').classList.remove('blur-in');
+        }
+      }
+
+      window.addEventListener('scroll', checkScroll);
+      checkScroll();
+    });
+    </script>
+
+    <!-- Projects -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var projectsSection = document.querySelector('.projects');
+      var projectsSectionOffset = projectsSection.offsetTop;
+      var projectsSectionHeight = projectsSection.offsetHeight;
+
+      function checkScroll() {
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition >= projectsSectionOffset - window.innerHeight + projectsSectionHeight / 2) {
+          projectsSection.classList.remove('fade-out');
+        } else {
+          projectsSection.classList.add('fade-out');
+        }
+      }
+
+      window.addEventListener('scroll', checkScroll);
+      checkScroll();
+    });
+    </script>
+
+    <!-- T&C -->
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+  var rulesSection = document.querySelector('.rules-wrapper');
+  var rulesSectionOffset = rulesSection.offsetTop;
+  var rulesSectionHeight = rulesSection.offsetHeight;
+
+  function checkScroll() {
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition >= rulesSectionOffset - window.innerHeight + rulesSectionHeight / 2) {
+      rulesSection.classList.add('slide-in');
+    } else {
+      rulesSection.classList.remove('slide-in');
+    }
+  }
+
+  window.addEventListener('scroll', checkScroll);
+  checkScroll();
+});
+
+    </script>
+   
   </body>
 </html>

@@ -42,6 +42,15 @@ body {
   align-items: center;
   width: 100%;
   height: auto;
+  opacity: 0; /* Opacity awal */
+  transform: translateX(-50px); /* Translasi awal */
+  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.rules-wrapper.slide-in {
+  opacity: 1; /* Opacity saat di-scroll */
+  transform: translateX(0); /* Translasi saat di-scroll */
+  transition-delay: 0.5s;
 }
 
 .rules-wrapper h2 {
@@ -138,6 +147,15 @@ ul {
   margin: 30px;
   width: 80%;
   border-radius: 20px;
+}
+
+.announcement .announcement-wrapper {
+  filter: blur(10px); /* Efek blur awal */
+  transition: filter 1s ease-in-out; /* Transisi efek blur */
+}
+
+.announcement .announcement-wrapper.blur-in {
+  filter: none; /* Menghapus efek blur saat di-scroll */
 }
 
 .announcement-wrapper p a {
@@ -305,18 +323,34 @@ header {
 
 .hero .content h1 {
   margin: 0;
-  font-family: "Cinzel", serif;
+  font-family: "Castoro", serif;
   text-shadow: 2px 2px 10px #59baba;
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: var(--mb);
-  letter-spacing: 1px;
+}
+
+.single-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hero .content p {
   font-weight: 400;
   line-height: 1.4;
   margin-bottom: var(--mb);
+}
+
+.hero .content .avl-btn:hover {
+  background-color: #ccc;
+  border: none;
+  color: black;
+}
+
+.hero .content .hero-btn:hover {
+  background-color: #59baba;
+  border: none;
 }
 
 .cta {
@@ -342,6 +376,12 @@ header {
 .about {
   background-color: var(--bg-color);
   padding: 40px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.about.fade-in {
+  opacity: 1;
 }
 
 .about-wrapper {
@@ -378,13 +418,21 @@ dt {
 
 /* PROJECTS */
 #projects {
-  /* background-image: url(https://screenmusings.org/movie/blu-ray/Fallen-Angels/images/Fallen-Angels-034.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 40px !important;
   margin: auto;
   width: 100%;
+}
+
+.projects {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.projects.fade-out {
+  opacity: 0;
 }
 
 .projects .block-content {
@@ -407,7 +455,7 @@ dt {
 
 .projects .block-content p {
   font-weight: 300;
-  margin: 20px 0 30px 0;
+  margin: 10px 0 20px 0;
 }
 
 .projects .row {
@@ -483,7 +531,8 @@ small {
 }
 
 h5 {
-  font-family: "Cinzel", serif;
+  font-family: "Castoro", serif;
+  text-transform: uppercase;
   font-weight: 400;
   text-shadow: 1px 1px 5px #59baba;
 }
@@ -601,7 +650,13 @@ i {
   }
 
   .hero .content h1 {
-    font-size: 28px;
+    font-size: 2.8rem;
+  }
+
+  .single-line {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: inherit;
   }
 
   .about-wrapper {

@@ -42,7 +42,7 @@
     <!-- Hero start -->
     <section id="hero" class="hero">
       <div class="content blur-in">
-        <h1 class="single-line">A Matter of Time, A Labour of Love</h1>
+        <h1 class="single-line">A Matter of Time,<br />A Labour of Love</h1>
         <p>Indulge in the symphony of love and passion woven into our unforgettable service.</p>
         <a href="https://www.notion.so/stlaurent/Management-92c7c3abd95849c6b7efd0be03142b37" class="btn btn-light text-uppercase mt-2 me-3 avl-btn">Availability</a>
         <a href="https://twitter.com/Revassaer" class="text-uppercase btn btn-outline-light mt-2 hero-btn">Book a Session</a>
@@ -143,7 +143,7 @@
     <section id="rules" class="rules">
       <div class="rules-wrapper">
         <h2>Terms & Conditions</h2>
-        <button class="accordion d-flex justify-content-between">Guidelines<i class="fa-solid fa-chevron-down"></i></button>
+        <button class="accordion d-flex justify-content-between align-items-center">Guidelines<i class="fa-solid fa-chevron-down"></i></button>
         <div class="panel .panel.open">
           <ol class="indented-list">
             <li>Prior to availing our services, kindly acknowledge that you consent to the regulations outlined for each talent.</li>
@@ -154,7 +154,7 @@
           </ol>
         </div>
 
-        <button class="accordion d-flex justify-content-between">Procedures<i class="fa-solid fa-chevron-down"></i></button>
+        <button class="accordion d-flex justify-content-between align-items-center">Procedures<i class="fa-solid fa-chevron-down"></i></button>
         <div class="panel">
           <ol class="indented-list">
             <li>Kindly refer to the schedule provided below to ascertain the availability of each talent.</li>
@@ -168,7 +168,7 @@
           </ol>
         </div>
 
-        <button class="accordion d-flex justify-content-between">Important Notice<i class="fa-solid fa-chevron-down"></i></button>
+        <button class="accordion d-flex justify-content-between align-items-center">Important Notice<i class="fa-solid fa-chevron-down"></i></button>
         <div class="panel">
           <p class="mono-space text-danger mt-3">Fredrick is taking rest until June 9</p>
         </div>
@@ -229,6 +229,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
+    <script>
+      // Mendapatkan elemen section hero
+      var heroSection = document.getElementById("hero");
+
+      // Mendeteksi saat halaman dimuat
+      window.addEventListener("load", function () {
+        heroSection.classList.add("visible");
+      });
+    </script>
     <!-- Accordion -->
     <script>
       var acc = document.getElementsByClassName("accordion");

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="script.js" />
     <link rel="stylesheet" href="style.css" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Castoro:ital@0;1&family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Castoro:ital@0;1&family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet" />
     <!-- Font Awesome Icon -->
     <script src="https://kit.fontawesome.com/66d1df4e05.js" crossorigin="anonymous"></script>
   </head>
@@ -18,9 +18,9 @@
     <!-- Landing Page -->
     <header>
       <nav class="navbar shadow-lg">
-        <div class="logo" id="hero"><a href="#hero">天使 Management</a></div>
+        <div class="logo" id="logo"><a href="#hero">天使 Management</a></div>
         <ul class="links">
-          <li><a href="#hero" class="active>Home</a></li>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Talents</a></li>
           <li><a href="#rules">Regulations</a></li>
@@ -29,7 +29,7 @@
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
-
+      <!-- Dropdown Menu -->
       <div class="dropdown_menu">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -39,16 +39,16 @@
       </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero" id="hero">
-      <div class="content">
+    <!-- Hero start -->
+    <section id="hero" class="hero">
+      <div class="content blur-in">
         <h1 class="single-line">A Matter of Time, A Labour of Love</h1>
         <p>Indulge in the symphony of love and passion woven into our unforgettable service.</p>
         <a href="https://www.notion.so/stlaurent/Management-92c7c3abd95849c6b7efd0be03142b37" class="btn btn-light text-uppercase mt-2 me-3 avl-btn">Availability</a>
         <a href="https://twitter.com/Revassaer" class="text-uppercase btn btn-outline-light mt-2 hero-btn">Book a Session</a>
       </div>
     </section>
-    <!-- End of Hero -->
+    <!-- Hero end -->
 
     <!-- About Section start -->
     <section id="about" class="about">
@@ -90,92 +90,93 @@
         </div>
       </div>
     </section>
+    <!-- About Section end -->
 
-    <!-- Announcement -->
+    <!-- Announcement start -->
     <section id="announcement" class="announcement">
       <div class="announcement-wrapper p-4">
         <h2 class="text-white text-center anc-title">We await the arrival of captivating hearts to complete our narrative.</h2>
         <p class="text-white text-center text-sm">
           Our hearts beckon for souls who crave the embrace of our sanctuary, where tenderness and nurturing guidance intertwine, igniting a passionate flame that illuminates our journey. Prior to joining us, it is crucial to familiarize
-          yourself with the rules provided on this <a href="https://www.notion.so/stlaurent/Laurent-82cc966250054e8191ed20ce2084553f">section</a>. Furthermore, individuals who meet the following prerequisites will be given significant consideration:
+          yourself with the rules provided on this <a href="https://www.notion.so/stlaurent/Laurent-82cc966250054e8191ed20ce2084553f">section</a>. Furthermore, individuals who meet the following prerequisites will be given significant
+          consideration:
           <span class="font-monospace anc-text fs-6">i) own a strong personal brand, ii) proficient in both English and Bahasa, iii) meeting the minimum age requirement;</span>
           if you believe you fulfill these qualifications, please do not hesitate to contact us through direct message. We are filled with anticipation as we prepare to welcome you.
         </p>
       </div>
     </section>
-    <!-- End of Announcement -->
+    <!-- Announcement end -->
 
-    <!-- Projects -->
-    <!-- <section class="projects"></section> -->
+    <!-- Projects start -->
     <section id="projects" class="projects">
-      <div class="block-content">
+      <div class="block-content fade-in">
         <h2>Unleash the essence of your heart's desire</h2>
         <p>Let your heart dance amidst the choices below, knowing that every film has been chosen with meticulous care to meet and exceed your every romantic whim.</p>
       </div>
 
       <div class="row">
         <div class="col">
-          <div class="row-img mb-4">
+          <div class="row-img mb-4 fade-in">
             <a href="https://matteo-sinclair.carrd.co"><img src="img/pr-1.JPG" alt="Project1" class="responsive" /></a>
           </div>
         </div>
         <div class="col">
-          <div class="row-img mb-4">
+          <div class="row-img mb-4 fade-in">
             <a href="https://ecce-homo.carrd.co"><img src="img/pr-2.JPG" alt="Project2" class="responsive" /></a>
           </div>
         </div>
         <div class="col">
-          <div class="row-img mb-4">
+          <div class="row-img mb-4 fade-in">
             <a href="https://liquerest.carrd.co"><img src="img/pr-3.JPG" alt="Project3" class="responsive" /></a>
           </div>
         </div>
         <div class="col">
-          <div class="row-img">
+          <div class="row-img fade-in">
             <a href="https://starstruck.drr.ac"><img src="img/pr-4.JPG" alt="Project4" class="responsive" /></a>
           </div>
         </div>
       </div>
     </section>
-    <!-- End of Projects -->
+    <!-- Projects end -->
 
-    <!-- T&C -->
+    <!-- T&C start -->
     <section id="rules" class="rules">
       <div class="rules-wrapper">
         <h2>Terms & Conditions</h2>
         <button class="accordion d-flex justify-content-between">Guidelines<i class="fa-solid fa-chevron-down"></i></button>
-          <div class="panel">
-            <ol class="indented-list">
-              <li>Prior to availing our services, kindly acknowledge that you consent to the regulations outlined for each talent.</li>
-              <li>We maintain a zero-tolerance policy towards any form of harmful behavior directed at our clients. Please exercise caution in your words and actions.</li>
-              <li>We regretfully do not accommodate clients who are currently in relationships.</li>
-              <li>Please note that the NSFW package is strictly restricted to individuals of legal age. Minors are prohibited from placing such orders.</li>
-              <li>Respecting each other's privacy is of utmost importance. Any severe violation will result in immediate suspension or banning.</li>
-            </ol>
-          </div>
+        <div class="panel .panel.open">
+          <ol class="indented-list">
+            <li>Prior to availing our services, kindly acknowledge that you consent to the regulations outlined for each talent.</li>
+            <li>We maintain a zero-tolerance policy towards any form of harmful behavior directed at our clients. Please exercise caution in your words and actions.</li>
+            <li>We regretfully do not accommodate clients who are currently in relationships.</li>
+            <li>Please note that the NSFW package is strictly restricted to individuals of legal age. Minors are prohibited from placing such orders.</li>
+            <li>Respecting each other's privacy is of utmost importance. Any severe violation will result in immediate suspension or banning.</li>
+          </ol>
+        </div>
 
-          <button class="accordion d-flex justify-content-between ">Procedures<i class="fa-solid fa-chevron-down"></i></button>
-          <div class="panel">
-            <ol class="indented-list">
-              <li>Kindly refer to the schedule provided below to ascertain the availability of each talent.</li>
-              <li>Should you decide to engage their services, kindly contact me at Telegram or Twitter to confirm their availability.</li>
-              <li>We kindly request your patience as we assess their availability for your desired dates. You will be promptly notified of any updates.</li>
-              <li>To proceed further, we kindly request that you diligently fill out the forms provided on the individual talent's websites.</li>
-              <li>
-                Once you have successfully filled out the required form, an invoice accompanied by a QR code for payment processing will be sent to you. Please understand that due to my limited availability, there might be a slight
-                delay in issuing the invoice.
-              </li>
-            </ol>
-          </div>
+        <button class="accordion d-flex justify-content-between">Procedures<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="panel">
+          <ol class="indented-list">
+            <li>Kindly refer to the schedule provided below to ascertain the availability of each talent.</li>
+            <li>Should you decide to engage their services, kindly contact me at Telegram or Twitter to confirm their availability.</li>
+            <li>We kindly request your patience as we assess their availability for your desired dates. You will be promptly notified of any updates.</li>
+            <li>To proceed further, we kindly request that you diligently fill out the forms provided on the individual talent's websites.</li>
+            <li>
+              Once you have successfully filled out the required form, an invoice accompanied by a QR code for payment processing will be sent to you. Please understand that due to my limited availability, there might be a slight delay in
+              issuing the invoice.
+            </li>
+          </ol>
+        </div>
 
-          <button class="accordion d-flex justify-content-between ">Important Notice<i class="fa-solid fa-chevron-down"></i></button>
-          <div class="panel">
-              <p class="mono-space text-danger mt-3">Fredrick is taking rest until June 9</p>
-          </div>
+        <button class="accordion d-flex justify-content-between">Important Notice<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="panel">
+          <p class="mono-space text-danger mt-3">Fredrick is taking rest until June 9</p>
+        </div>
       </div>
     </section>
-    <!-- End of Rules -->
+    <!-- T&C END -->
 
-    <!-- Footer -->
+    <!-- Footer start -->
     <section class="footer">
       <div class="footer-wrapper">
         <div class="footer-1">
@@ -211,6 +212,7 @@
         </div>
       </div>
     </section>
+    <!-- Footer end -->
 
     <script>
       const toggleBtn = document.querySelector(".toggle_btn");
@@ -227,131 +229,140 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
+    <!-- Accordion -->
     <script>
       var acc = document.getElementsByClassName("accordion");
-      var i;
-    
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
+      var panels = document.getElementsByClassName("panel");
+
+      for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
           var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
+          var isActive = this.classList.contains("active");
+
+          // Close the currently open panel
+          for (var j = 0; j < panels.length; j++) {
+            panels[j].style.maxHeight = null;
+            acc[j].classList.remove("active");
+          }
+
+          // Open the panel that was clicked if it's not currently open, and add the class "active"
+          if (!isActive) {
             panel.style.maxHeight = panel.scrollHeight + "px";
-          } 
+            this.classList.add("active");
+          }
         });
+
+        // Add the following code to mark the first pane as open
+        if (i === 0) {
+          acc[i].classList.add("active");
+          panels[i].style.maxHeight = panels[i].scrollHeight + "px";
+        }
       }
     </script>
 
     <!-- Hero -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-      var heroSection = document.querySelector('.hero');
-      var heroSectionOffset = heroSection.offsetTop;
-      var heroSectionHeight = heroSection.offsetHeight;
+      document.addEventListener("DOMContentLoaded", function () {
+        var heroSection = document.querySelector(".hero");
+        var heroSectionOffset = heroSection.offsetTop;
+        var heroSectionHeight = heroSection.offsetHeight;
 
-      function checkScroll() {
-        var scrollPosition = window.scrollY;
+        function checkScroll() {
+          var scrollPosition = window.scrollY;
 
-        if (scrollPosition >= heroSectionOffset - window.innerHeight + heroSectionHeight / 2) {
-          heroSection.querySelector('.content').classList.add('fade-up');
-        } else {
-          heroSection.querySelector('.content').classList.remove('fade-up');
+          if (scrollPosition >= heroSectionOffset - window.innerHeight + heroSectionHeight / 2) {
+            heroSection.querySelector(".content").classList.add("fade-up");
+          } else {
+            heroSection.querySelector(".content").classList.remove("fade-up");
+          }
         }
-      }
 
-      window.addEventListener('scroll', checkScroll);
-      checkScroll();
-    });
+        window.addEventListener("scroll", checkScroll);
+        checkScroll();
+      });
     </script>
 
     <!-- About -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-      var aboutSection = document.querySelector('.about');
-      var aboutSectionOffset = aboutSection.offsetTop;
-      var aboutSectionHeight = aboutSection.offsetHeight;
+      document.addEventListener("DOMContentLoaded", function () {
+        var aboutSection = document.querySelector(".about");
+        var aboutSectionOffset = aboutSection.offsetTop;
+        var aboutSectionHeight = aboutSection.offsetHeight;
 
-      function checkScroll() {
-        var scrollPosition = window.scrollY;
+        function checkScroll() {
+          var scrollPosition = window.scrollY;
 
-        if (scrollPosition >= aboutSectionOffset - window.innerHeight + aboutSectionHeight / 2) {
-          aboutSection.classList.add('fade-in');
+          if (scrollPosition >= aboutSectionOffset - window.innerHeight + aboutSectionHeight / 2) {
+            aboutSection.classList.add("fade-in");
+          }
         }
-      }
 
-      window.addEventListener('scroll', checkScroll);
-      checkScroll();
-    });
+        window.addEventListener("scroll", checkScroll);
+        checkScroll();
+      });
     </script>
 
     <!-- Anc -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-      var announcementSection = document.querySelector('.announcement');
-      var announcementSectionOffset = announcementSection.offsetTop;
-      var announcementSectionHeight = announcementSection.offsetHeight;
+      document.addEventListener("DOMContentLoaded", function () {
+        var announcementSection = document.querySelector(".announcement");
+        var announcementSectionOffset = announcementSection.offsetTop;
+        var announcementSectionHeight = announcementSection.offsetHeight;
 
-      function checkScroll() {
-        var scrollPosition = window.scrollY;
+        function checkScroll() {
+          var scrollPosition = window.scrollY;
 
-        if (scrollPosition >= announcementSectionOffset - window.innerHeight + announcementSectionHeight / 2) {
-          announcementSection.querySelector('.announcement-wrapper').classList.add('blur-in');
-        } else {
-          announcementSection.querySelector('.announcement-wrapper').classList.remove('blur-in');
+          if (scrollPosition >= announcementSectionOffset - window.innerHeight + announcementSectionHeight / 2) {
+            announcementSection.querySelector(".announcement-wrapper").classList.add("blur-in");
+          } else {
+            announcementSection.querySelector(".announcement-wrapper").classList.remove("blur-in");
+          }
         }
-      }
 
-      window.addEventListener('scroll', checkScroll);
-      checkScroll();
-    });
+        window.addEventListener("scroll", checkScroll);
+        checkScroll();
+      });
     </script>
 
     <!-- Projects -->
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-      var projectsSection = document.querySelector('.projects');
-      var projectsSectionOffset = projectsSection.offsetTop;
-      var projectsSectionHeight = projectsSection.offsetHeight;
+      function isElementInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+      }
 
-      function checkScroll() {
-        var scrollPosition = window.scrollY;
-
-        if (scrollPosition >= projectsSectionOffset - window.innerHeight + projectsSectionHeight / 2) {
-          projectsSection.classList.remove('fade-out');
-        } else {
-          projectsSection.classList.add('fade-out');
+      function handleScroll() {
+        var elements = document.querySelectorAll(".fade-in");
+        for (var i = 0; i < elements.length; i++) {
+          if (isElementInViewport(elements[i])) {
+            elements[i].classList.add("show");
+          }
         }
       }
 
-      window.addEventListener('scroll', checkScroll);
-      checkScroll();
-    });
+      window.addEventListener("scroll", handleScroll);
     </script>
 
     <!-- T&C -->
     <script>
-     document.addEventListener('DOMContentLoaded', function() {
-  var rulesSection = document.querySelector('.rules-wrapper');
-  var rulesSectionOffset = rulesSection.offsetTop;
-  var rulesSectionHeight = rulesSection.offsetHeight;
+      document.addEventListener("DOMContentLoaded", function () {
+        var rulesSection = document.querySelector(".rules-wrapper");
+        var rulesSectionOffset = rulesSection.offsetTop;
+        var rulesSectionHeight = rulesSection.offsetHeight;
 
-  function checkScroll() {
-    var scrollPosition = window.scrollY;
+        function checkScroll() {
+          var scrollPosition = window.scrollY;
 
-    if (scrollPosition >= rulesSectionOffset - window.innerHeight + rulesSectionHeight / 2) {
-      rulesSection.classList.add('slide-in');
-    } else {
-      rulesSection.classList.remove('slide-in');
-    }
-  }
+          if (scrollPosition >= rulesSectionOffset - window.innerHeight + rulesSectionHeight / 2) {
+            rulesSection.classList.add("slide-in");
+          } else {
+            rulesSection.classList.remove("slide-in");
+          }
+        }
 
-  window.addEventListener('scroll', checkScroll);
-  checkScroll();
-});
-
+        window.addEventListener("scroll", checkScroll);
+        checkScroll();
+      });
     </script>
-   
   </body>
 </html>

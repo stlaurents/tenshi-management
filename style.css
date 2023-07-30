@@ -67,7 +67,7 @@ body {
 
 .active,
 .accordion:hover {
-  background-color: rgb(123, 109, 109)
+  background-color: rgb(123, 109, 109);
   color: #4d4a4a;
 }
 
@@ -89,7 +89,7 @@ body {
 
 /* T&C */
 #rules {
-  background-image: url(img/bg-4.jpeg);
+  background-image: url(https://e0.pxfuel.com/wallpapers/975/162/desktop-wallpaper-fallen-angels-199-wong-kar-wai.jpg);
   flex-wrap: wrap;
 }
 
@@ -98,7 +98,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  background: url(img/bg-1.jpeg) no-repeat center;
+  background: url(https://e0.pxfuel.com/wallpapers/975/162/desktop-wallpaper-fallen-angels-199-wong-kar-wai.jpg) no-repeat center;
   background-size: cover;
   align-items: center;
   width: 100%;
@@ -125,6 +125,15 @@ body {
   margin-bottom: 10px;
 }
 
+.list-wrapper {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  color: white;
+  width: 50%;
+}
+
 ol,
 ul {
   padding: 0;
@@ -135,12 +144,12 @@ ul {
   background: url(img/bg-1.jpeg) no-repeat center;
   background-size: cover;
   align-items: center;
-  display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
   position: relative;
   z-index: -999;
+  margin: auto;
 }
 
 .announcement-wrapper {
@@ -148,7 +157,14 @@ ul {
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   padding: 20px;
-  margin: 30px;
+  margin: auto;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.announcement-wrapper-2 {
+  padding: 20px;
+  margin: auto;
   width: 80%;
   border-radius: 20px;
 }
@@ -504,7 +520,7 @@ dt {
 }
 
 .responsive {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -660,9 +676,9 @@ i {
   }
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
   .single-line {
-    white-space:normal;
+    white-space: normal;
   }
 }
 

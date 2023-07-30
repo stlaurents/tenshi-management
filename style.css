@@ -169,14 +169,14 @@ ul {
   border-radius: 20px;
 }
 
-.announcement .announcement-wrapper {
+/* .announcement .announcement-wrapper {
   filter: blur(10px);
   transition: filter 1s ease-in-out;
 }
 
 .announcement .announcement-wrapper.blur-in {
   filter: none;
-}
+} */
 
 .announcement-wrapper p a {
   font-size: 16px;

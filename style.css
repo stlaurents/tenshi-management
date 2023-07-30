@@ -158,7 +158,7 @@ ul {
   backdrop-filter: blur(15px);
   padding: 20px;
   margin: auto;
-  width: 80%;
+  width: 100%;
   border-radius: 20px;
 }
 

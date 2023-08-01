@@ -150,6 +150,7 @@ ul {
   position: relative;
   z-index: -999;
   margin: auto;
+  padding: 40px;
 }
 
 .anc-content {
@@ -158,14 +159,14 @@ ul {
   backdrop-filter: blur(15px);
   padding: 20px;
   margin: auto;
-  width: 100%;
+  width: 50%;
   border-radius: 20px;
 }
 
 .announcement-wrapper-2 {
   padding: 20px;
   margin: auto;
-  width: 80%;
+  width: 50%;
   border-radius: 20px;
 }
 
@@ -618,6 +619,10 @@ i {
 
   .about-wrapper {
     flex-wrap: wrap;
+  }
+
+  .anc-content {
+    width: 100%;
   }
 
   .projects .block-content h2,

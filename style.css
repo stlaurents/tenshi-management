@@ -189,10 +189,11 @@ ul {
 }
 
 h2.anc-title {
-  font-family: "Felipa";
-  font-size: 2.8rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
   text-shadow: 2px 2px 10px #59baba;
   margin: 0;
+  font-style: italic;
 }
 
 .anc-text {
@@ -456,7 +457,7 @@ dt {
 .about .about-content h2 {
   font-family: "Felipa";
   font-size: 22px;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #fff;
   text-shadow: 2px 2px 10px #59baba;
@@ -585,8 +586,9 @@ small {
 }
 
 .footer-link {
-  font-family: "Castoro", serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: 1px 1px 5px #59baba;
+  text-transform: uppercase;
   font-weight: 400;
 }
 
@@ -638,7 +640,7 @@ i {
   .projects .block-content h2,
   .about .about-content h2,
   .rules-wrapper h2 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 
   .projects .block-content {
@@ -751,7 +753,7 @@ i {
 
   .projects .block-content h2,
   .about .about-content h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .projects .block-content p {
